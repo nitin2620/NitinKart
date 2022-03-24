@@ -1,15 +1,6 @@
 import React from 'react';
 class Cartitem extends React.Component{
-    constructor(){
-        super();
-        this.state={
-            title:"Mobile phone",
-            price:999,
-            quantity:1
-        }
-      // this.increaseQuantity= this.increaseQauntity.bind(this)
-
-    }
+  
     increaseQauntity = () => {
 this.setState({
 
@@ -32,10 +23,9 @@ this.setState({
     
     }
     render(){
-        const{
-            title,price,quantity
-           }=this.state
+        const {title,price,quantity} =this.props.product
     return (
+        
        
     <><div className="Cartitem">
             <div className="Leftblock">
@@ -48,13 +38,13 @@ this.setState({
                 <div className="cart-item-action">
 <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" style={{
     height:25,width:25,marginRight: 10
-}} onClick ={this.increaseQauntity}></img>
+}} onClick ={()=>{this.props.IncreaseQuantity(this.props.product)}}></img>
 <img src="https://cdn-icons-png.flaticon.com/512/992/992683.png" style={{
     height:25,width:25 ,marginRight: 10
-}} onClick={this.decreaseQuantity}></img>
+}} onClick={()=>{this.props.DecreaseQuantity(this.props.product)}}></img>
 <img src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" style={{
     height:25,width:25 ,marginRight: 10
-}}></img>
+}} onClick={()=>{this.props.DeleteQuantity(this.props.product.id)}}></img>
                 </div>
             </div>
 
