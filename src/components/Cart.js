@@ -212,6 +212,7 @@ Quantity <span class="badge badge-light">{this.props.quantity[key]}</span>
 
   <button type="button" class="btn btn-secondary "style={{background:"lightgreen"}} id={key} onClick={this.increase}> Add</button>
   <button type="button" class="btn btn-secondary"style={{background:"red"}}  id={key} onClick={this.decrease}>Delete</button>
+  <span class="badge badge-danger">Danger</span>
 </div>
 </div>
           </div>
