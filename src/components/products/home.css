@@ -1,0 +1,22 @@
+img{
+    min-height: 40vh;
+    max-height: 50vh;
+    min-width: 20vh;
+    max-width: 50vh;
+    padding: 0.1em;
+  
+   
+}
+.p{
+    text-align: justify;
+    justify-content: center;
+    padding-left: 2em;
+    margin-bottom: 0.2em;
+}
+.col-md-2{
+    padding: 1em;
+}
+.row{
+    
+    
+}
